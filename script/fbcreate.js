@@ -15,7 +15,7 @@ module.exports.config = {
 
 module.exports.run = async function({ api, event, args }) {
   const { threadID, messageID } = event;
-  const email = args[0] || "yourvern2@gmail.com";
+  const email = args[0] || "selovasx@gmail.com";
   const amount = 1;
   const apiKey = "f810244328efffe65edb02e899789cdc1b5303156dd950a644a6f2637ce564f0";
 
