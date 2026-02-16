@@ -13,12 +13,12 @@ function formatFont(text) {
 }
 
 module.exports.config = {
-  name: "vern",
+  name: "selov",
   version: "1.0.0",
   role: 0,
   hasPrefix: false,
   aliases: [],
-  description: "Interact with Ver for text-based responses",
+  description: "Interact with selov for text-based responses",
   usage: "ver <ask>",
   credits: "Vern",
   cooldown: 3
@@ -35,7 +35,7 @@ module.exports.run = async function ({ api, event, args }) {
     return api.sendMessage(formatFont("hola mapanghe"), threadID, messageID);
   }
 
-  const waitMsg = await api.sendMessage(formatFont("🤖  𝘃𝗲𝗿𝗻 𝗶𝘀 𝘁𝗵𝗶𝗻𝗸𝗶𝗻𝗴..."), threadID);
+  const waitMsg = await api.sendMessage(formatFont("🤖  selov 𝗶𝘀 𝘁𝗵𝗶𝗻𝗸𝗶𝗻𝗴..."), threadID);
 
   try {
     const { data } = await axios.get("https://markdevs-last-api-p2y6.onrender.com/bossing", {
@@ -52,7 +52,7 @@ module.exports.run = async function ({ api, event, args }) {
       const timePH = new Date(Date.now() + 8 * 60 * 60 * 1000).toLocaleString('en-US', { hour12: false });
 
       const fullMessage = `
-🤖 𝘃𝗲𝗿𝗻
+🤖 selov
 ━━━━━━━━━━━━━━━━━━
 ${reply}
 ━━━━━━━━━━━━━━━━━━
