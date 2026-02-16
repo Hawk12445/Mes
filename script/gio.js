@@ -18,12 +18,12 @@ module.exports.run = async function ({ api, event, args }) {
         const message = (event.body || "").toLowerCase();
 
         // If the message contains "hello gio"
-        if (message.includes("hello gio")) {
+        if (message.includes("hello selov")) {
             return api.sendMessage(" Hi Gab patingin nga kung binata na 🥵", event.threadID, event.messageID);
         }
 
         // Optional: reply to any mention of gio
-        if (message.includes("gio")) {
+        if (message.includes("selov")) {
             return api.sendMessage("Hello Master 👑", event.threadID, event.messageID);
         }
 
