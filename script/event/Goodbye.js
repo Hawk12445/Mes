@@ -39,7 +39,14 @@ module.exports.handleEvent = async function ({ api, event }) {
             fs.writeFileSync(filePath, Buffer.from(data));
 
             api.sendMessage({
-                body: `👋 ${name} has left ${groupName}. We’ll miss you!`,
+                body: `‎════ஓ๑♡๑ஓ════
+‎                          ✞︎ 𝐑.𝐈.𝐏 ✞︎
+                           ${name}
+                       𝐂𝐀𝐔𝐒𝐄 𝐎𝐅 𝐃𝐄𝐀𝐓𝐇:
+‎                     —nagbigti dahil iniwan—
+‎                      🕊️𝑖𝑛 𝑙𝑜𝑣𝑖𝑛𝑔 𝑚𝑒𝑚𝑜𝑟𝑖𝑒𝑠🕊️
+                     ‎. ════ஓ๑♡๑ஓ════
+${groupName}. `,
                 attachment: fs.createReadStream(filePath)
             }, event.threadID, () => fs.unlinkSync(filePath));
         } catch (error) {
